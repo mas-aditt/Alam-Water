@@ -1,0 +1,282 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fa;
+}
+
+.admin-usr {
+  display: flex;
+  height: 100vh;
+}
+
+.container-18 {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* .logo {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+} */
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu-item a {
+  display: flex;
+  align-items: center;
+  color: white; /* Warna font putih */
+  text-decoration: none; /* Menghilangkan underline */
+  width: 100%; /* Supaya tautan memenuhi seluruh lebar menu-item */
+}
+
+.menu-item span {
+  font-size: 16px;
+}
+
+.container-14 {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar img {
+  margin-right: 10px;
+}
+
+.search-bar input {
+  border: none;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+.admin-info {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.table {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #34495e;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody td {
+  background-color: #ffffff;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.edit-btn, .remove-btn {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+}
+
+.edit-btn:hover, .remove-btn:hover {
+  opacity: 0.9;
+}
+
+/* Style untuk form */
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Input styling */
+form input[type="text"], form input[type="email"], form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+form input[type="text"]:focus, form input[type="email"]:focus, form input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+form button, form a {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling untuk tombol cancel */
+form a {
+  background-color: #6c757d;
+  color: white;
+  margin-left: 10px;
+}
+
+form a:hover {
+  background-color: #5a6268;
+}
+
+.pesan {
+  max-width: 300px; /* Atur lebar maksimum untuk kolom pesan */
+  word-wrap: break-word; /* Membungkus teks jika terlalu panjang */
+  word-break: break-word; /* Memastikan kata yang panjang juga terpotong */
+  white-space: normal; /* Memungkinkan teks untuk membungkus ke bawah */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara ikon, input, dan tombol */
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara input dan tombol */
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px; /* Atur sesuai kebutuhan */
+}
+
+button.cari-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: -20px;
+}
+
+button.cari-btn:hover {
+  background-color: #2980b9;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-usr {
+    flex-direction: column;
+  }
+
+  .container-18 {
+    width: 100%;
+    height: auto;
+  }
+
+  .table {
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,207 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Admin Transaction Layout */
+.admin-trx {
+  display: flex;
+  height: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Menu Styling */
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Memastikan menu memenuhi seluruh lebar sidebar */
+  flex-grow: 0;
+}
+
+/* Menu Item Styling */
+.menu-item {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.menu-item a {
+  display: flex;
+  align-items: center;
+  color: white; /* Warna font putih */
+  text-decoration: none; /* Menghilangkan underline */
+  width: 100%; /* Supaya tautan memenuhi seluruh lebar menu-item */
+}
+
+.menu-item span {
+  font-size: 16px;
+  flex-grow: 1; /* Isi ruang yang tersisa dalam item */
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: #34495e;
+}
+
+/* Main Content Styling */
+.main-content {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  height: auto;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar img {
+  margin-right: 10px;
+}
+
+.search-bar input {
+  border: none;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.admin-info {
+  font-weight: 500;
+}
+
+/* Transaction Section Styling */
+.transaction-section {
+  background-color: #f7f9fc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.transaction-section h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.filter-group input {
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* Transaction Table Styling */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-table thead {
+  background-color: #34495e;
+  color: #ffffff;
+}
+
+.transaction-table th, .transaction-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.transaction-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.transaction-table tbody tr:hover {
+  background-color: #ecf0f1;
+}
+
+.transaction-table tbody td {
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.edit-btn, .remove-btn {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+}
+
+.edit-btn:hover, .remove-btn:hover {
+  opacity: 0.9;
+}
+
+.search-btn {
+  background-color: #4CAF50; /* Warna latar belakang hijau */
+  color: white; /* Warna teks putih */
+  padding: 10px 20px; /* Padding atas dan bawah, kiri dan kanan */
+  border: none; /* Menghapus border default */
+  border-radius: 5px; /* Sudut membulat */
+  font-size: 16px; /* Ukuran font */
+  cursor: pointer; /* Menampilkan cursor pointer saat hover */
+  transition: background-color 0.3s ease; /* Efek transisi untuk perubahan warna */
+}
+
+.search-btn:hover {
+  background-color: #45a049; /* Warna latar belakang saat hover */
+}
